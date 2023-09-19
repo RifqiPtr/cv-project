@@ -24,6 +24,7 @@ export class TopNotchComponent implements OnInit{
   second: string = '00';
   hour: string = '00';
   minute: string = '00';
+  caution: boolean = false;
 
   constructor(
     private datePipe: DatePipe
@@ -51,5 +52,9 @@ export class TopNotchComponent implements OnInit{
 
     const seconds = date.getSeconds();
     this.second = seconds < 10 ? '0' + seconds : seconds.toString();
+  }
+
+  cautionClick() {
+    this.caution = !this.caution;
   }
 }

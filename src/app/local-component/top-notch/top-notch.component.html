@@ -1,5 +1,8 @@
 <div class="date-show">
     <div class="clock">
+        <mat-icon class="icon-caution"
+        (click)="cautionClick()">report_problem</mat-icon>
+        <h1 *ngIf="caution">For the resolution smaller than 1200 x 800 is under costruction to support.</h1>
         <mat-icon class="icon-calendar">calendar_today</mat-icon>
         <p>{{date}}</p>
         <mat-icon class="icon">access_time</mat-icon>
