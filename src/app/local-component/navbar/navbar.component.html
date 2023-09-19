@@ -1,0 +1,24 @@
+<div class="navbar-container" [ngClass]="isClick ? 'navigation-clicked':''">
+    <div class="navbar-content">
+        <button class="logo-button"
+        (click)="onClickLogo()">
+            <mat-icon class="icon-expand">apps</mat-icon>
+        </button>
+        <div class="logo-text" *ngIf="isClick">
+            <h1>Angular</h1>
+            <h2>CV Project</h2>
+        </div>
+        <!-- <button class="close"
+        *ngIf="isClick">
+            <i class="fal fa-times close-icon"></i>
+        </button> -->
+    </div>
+    <ul class="navigation">
+        <li class="navigation-list" *ngFor="let list of dataNavbar">
+            <a href="{{list.routeLink}}" class="list">
+                <i><mat-icon>{{list.icon}}</mat-icon></i>
+                <span class="list-text" *ngIf="isClick">{{list.label}}</span>
+            </a>
+        </li>
+    </ul>
+</div>

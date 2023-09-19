@@ -1,0 +1,14 @@
+.skills-container {
+    .top-notch {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .content-container {
+        margin-left: 3.7rem;
+        img {
+            width: 200px;
+            margin-left: 30px;
+            clip-path: circle();
+        }
+    }
+}

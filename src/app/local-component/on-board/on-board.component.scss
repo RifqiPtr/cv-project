@@ -1,0 +1,97 @@
+.top-notch {
+    position: fixed;
+    flex-direction: row-reverse;
+    background-color: #2E4F4F;
+    height: 2.5rem;
+    width: 100%;
+}
+.on-board-container {
+    height: 100vh;
+    width: 100%;
+    .content-container {
+        display: flex;
+        flex-direction: row;
+        background: rgb(26, 25, 25);
+        height: 100%;
+        margin-left: 3.5rem;
+        text-align: justify;
+        color: #CBE4DE;
+        .content-title {
+            margin-left: 50px;
+            hr {
+                width: 40%;
+                margin-bottom: 10px;
+            }
+            .qi-text {
+                color: #8effbf;
+                margin-bottom: 4px;
+                font-size: 12px;
+            }
+            .hello-text {
+                color: white;
+                margin: 0px !important;
+                font-size: 40px;
+            }
+            .name-text {
+                color: #8effbf8c;
+                margin-left: 20px;
+                margin-top: -1px;
+                font-size: 50px;
+            }
+            .detail-text {
+                color: #f3f3f3b7;
+                width: 25rem;
+                text-align: left !important;
+            }
+        }
+        .content-sub {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+            .website-text {
+                font-size: 25px;
+                color: white;
+                font-weight: bolder;
+            }
+            h1 {
+                color: #8effbf8c;
+                font-size: 24px;
+            }
+            p {
+                font-size: 14px;
+                width: 35rem;
+                height: 20px;
+            }
+            .p-extend {
+                font-size: 14px;
+                width: 35rem;
+                height: 20px;
+                margin-top: 20px;
+            }
+            img {
+                width: 300px;
+                margin-top: -120px;
+                margin-left: 250px;
+                opacity: 40%;
+            }
+            .bold-text {
+                font-weight: bolder;
+                color: #8effbf;
+            }
+            .button-contact {
+                font-weight: bolder;
+                background: #8effbf;
+                width: 230px;
+            }
+        }
+    }
+}
+
+.wrap-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
