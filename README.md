@@ -38,6 +38,7 @@ This is the project for developing cv websites by rifqi. This project using Angu
 
 ```bash
   npm start
+  (or)
   ng serve --port (4200 or other available port)
 ```
 
