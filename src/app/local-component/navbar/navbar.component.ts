@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { navbarData } from './navbar-services/navbar-data';
 import { RouterLink } from '@angular/router';
-import {MatIconModule} from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon'
 
 @Component({
   selector: 'app-navbar',
@@ -16,7 +16,6 @@ import {MatIconModule} from '@angular/material/icon'
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  contentNavigation = ['Profile', 'Working Experience', 'Education', 'Portofolio'];
   logoImage: string = 'assets/images/navbar/logo-image.png';
   iconNavigation: string = '';
   dataNavbar = navbarData;
@@ -30,8 +29,7 @@ export class NavbarComponent implements OnInit {
     this.isClick = !this.isClick;
   }
 
-  onClick(label: string) {
-    console.log(label);
-    
+  onClickNavigation() {
+    this.isClick = false;
   }
 }

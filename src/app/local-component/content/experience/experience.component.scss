@@ -1,10 +1,19 @@
+.top-notch {
+    position: fixed;
+    flex-direction: row-reverse;
+    background-color: #2E4F4F;
+    height: 2.5rem;
+    width: 100%;
+}
 .experience-container {
-    .top-notch {
-        display: flex;
-        flex-direction: row-reverse;
-    }
     .content-container {
-        margin-left: 3.7rem;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        margin-left: 3.5rem;
+        text-align: justify;
+        color: #CBE4DE;
         img {
             width: 200px;
             margin-left: 30px;

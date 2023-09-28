@@ -1,13 +1,13 @@
 export const navbarData = [
     {
-        routeLink: 'rifqi/profile',
-        icon: 'account_box',
-        label: 'Profile'
+        routeLink: 'on-board',
+        icon: 'home',
+        label: 'Home'
     },
     {
-        routeLink: 'rifqi/education',
-        icon: 'school',
-        label: 'Education'
+        routeLink: 'rifqi/about-me',
+        icon: 'account_box',
+        label: 'About-me'
     },
     {
         routeLink: 'rifqi/experience',

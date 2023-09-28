@@ -4,7 +4,47 @@
         <app-top-notch></app-top-notch>
     </div>
     <div class="content-container">
-        <!-- <img [src]="'assets/images/on-board/cv-image.jpeg'"> -->
-        profile works!
+        <div class="content-wrapper">
+            <div class="profile-board">
+                <div class="card-title">
+                    <div class="wrapper-name">
+                        <img [src]="'assets/images/on-board/cv-image.jpeg'">
+                        <div class="card-name">
+                            <h1>Rifqi Putra Oktdianto</h1>
+                            <div class="detail-name">
+                                <mat-icon class="university">supervised_user_circle</mat-icon>
+                                <p>Bahcelor Degree of Information Systems</p>
+                            </div>
+                            <div class="detail-name-univ">
+                                <mat-icon class="university">business</mat-icon>
+                                <p>Bina Nusantara University</p>
+                            </div>
+                        </div>
+                        <button mat-raised-button 
+                        (click)="onContactMe()"
+                        class="contact-me">Contact Me! <mat-icon>perm_phone_msg</mat-icon></button>
+                    </div>
+                    <div class="detail-profile">
+                        <div class="content-detail" *ngFor="let item of dataProfile">
+                            <h1>{{item.title}}</h1>
+                            <p>{{item.content}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-me">
+                <h2>Front-End Engineer</h2>
+                <h1>About me</h1>
+                <p>I am a front-end engineer with 1 year of experience using the Angular.js framework. I have a strong interest in personal growth and continuous learning in coding. 
+                    I am passionate and motivated to keep expanding my skills as a front-end programmer. 
+                    Additionally, I have knowledge in programming languages such as PHP Yii2, HTML, SCSS, JavaScript, RXJS, and TypeScript.ts.</p>
+                <div class="contact-list" [ngClass]="{'slide-in': isContactlist, 'active': isContactlist}" *ngIf="isContactlist">
+                    <button>Whatsapp</button>
+                    <button>Linkedin</button>
+                    <button>Instagram</button>
+                    <button>Email</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

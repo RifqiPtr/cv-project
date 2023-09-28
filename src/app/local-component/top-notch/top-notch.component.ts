@@ -30,20 +30,21 @@ export class TopNotchComponent implements OnInit{
     private datePipe: DatePipe
   ) {}
   ngOnInit() {
+    this.clockUpdater();
     this.timerFetch();
   }
 
   timerFetch() {
     /* Repeater for get time by device time */
     setInterval(()=>{
-      const date = new Date;
-      this.clockUpdater(date);
+      this.clockUpdater();
     },1000);
     
     this.date = this.datePipe.transform(this.deviceTime, 'fullDate');
   }
 
-  clockUpdater(date: Date) {
+  clockUpdater() {
+    const date = new Date;
     const hour = date.getHours();
     this.hour = hour < 10 ? '0' + hour : hour.toString();
 

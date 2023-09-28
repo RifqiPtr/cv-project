@@ -5,15 +5,15 @@
             <mat-icon class="icon-expand">apps</mat-icon>
         </button>
         <div class="logo-text" *ngIf="isClick">
-            <h1>Angular</h1>
-            <h2>CV Project</h2>
+            <h1>AL RIFQI</h1>
+            <h2>Developers.</h2>
         </div>
         <!-- <button class="close"
         *ngIf="isClick">
             <i class="fal fa-times close-icon"></i>
         </button> -->
     </div>
-    <ul class="navigation">
+    <ul class="navigation" (click)="onClickNavigation()">
         <li class="navigation-list" *ngFor="let list of dataNavbar">
             <a href="{{list.routeLink}}" class="list">
                 <i><mat-icon>{{list.icon}}</mat-icon></i>
