@@ -7,7 +7,7 @@ This is the project for developing cv websites by rifqi. This project using Angu
 1. Clone this project
 
 ```bash
-  https://github.com/RifqiPtr/cv-project.git
+git clone https://github.com/RifqiPtr/cv-project.git
 ```
 
 2. Move to folder project
